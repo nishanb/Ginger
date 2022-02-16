@@ -80,7 +80,7 @@ if __name__ == "__main__":
 
             #TODO : Send notification to WS for trend change
             
-            #TODO : wait for price change and then send profit or loss alert
+            #TODO : wait for price change to start next trade
             time.sleep(60*3)
             
             #Restart Trading
