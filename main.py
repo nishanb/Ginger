@@ -10,7 +10,7 @@ if __name__ == "__main__":
     load_dotenv(find_dotenv())
 
     #setup helpers
-    TappiClient =  ApiClient(os.environ.get("TAAP_SECRET"),os.environ.get("MARKET"),os.environ.get("CURRENCY"))
+    TappiClient =  ApiClient(os.environ.get("TAAP_SECRET"),os.environ.get("MARKET"),os.environ.get("CURRENCY"),os.environ.get("TRADE_INTERVAL"))
     Notifer = Notifer(os.environ.get("TLEGRAM_BOT_TOKEN"),os.environ.get("TELEGRAM_NOTIFIER_ID"))
 
     #Trading logic

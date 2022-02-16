@@ -9,7 +9,10 @@ class Notifer:
         logging.info(self.bot.get_me()['first_name'] + "is Started")
 
     def notify(self,message):
-        self.bot.send_message(self.chat_id, message)
+        try:
+            self.bot.send_message(self.chat_id, message)
+        except:
+            pass
     
     def getLastChatId(self) -> String:
         try:
